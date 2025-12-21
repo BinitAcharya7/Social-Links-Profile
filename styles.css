@@ -1,0 +1,109 @@
+:root { 
+    --grey-900: #141414; 
+    --grey-800: #1F1F1F; 
+    --grey-700: #333333; 
+    --green: #C4F82A;
+    --white: #FFFFFF; 
+    --spc-500: 40px; 
+    --spc-300: 24px; 
+    --spc-200: 16px; 
+    --spc-150: 12px; 
+    --spc-100: 8px; 
+    --spc-50: 4px; 
+    box-sizing: border-box;
+} 
+    
+@font-face { 
+    font-family: Inter;
+     src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf"); 
+     /* font-weight: 400; 
+     line-height: 150%; 
+     font-size: 14px; */ 
+} 
+
+body { 
+    font-family: Inter;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* I keep forgetting this!!!*/
+    margin: 0;
+    background-color: var(--grey-900);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    padding: clamp(1.5rem, 8vw, 2.5rem); /* w/o this, the card wouldn't be responsive even with a clamp set on the card's width*/
+    background-color: var(--grey-800);
+    gap: var(--spc-300);
+    width: clamp(14rem, 80vw, 24rem);
+}
+
+.avatar {
+    background-image: url('assets/images/turd-ferguson.jpg');
+    background-size: cover;
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 62.375rem;
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spc-300);
+    text-align: center;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spc-200);
+    width: 100%;
+}
+
+button {
+    padding: var(--spc-150);
+    background-color: var(--grey-700);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.location {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--green);
+}
+
+.jawb {
+    font-weight: 400;
+    font-size: 1.3125rem;
+}
+
+.person {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--green);
+    color: #000;
+}
