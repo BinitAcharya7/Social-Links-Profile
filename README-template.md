@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/BinitAcharya7/Social-Links-Profile)
-- Live Site URL: [Live site URL](https://vercel.com/binitacharya7s-projects/blog-preview-card)
+- Live Site URL: [Live site URL](https://social-links-profileee.netlify.app/)
 
 ## My process
 
